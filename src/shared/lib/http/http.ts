@@ -1,8 +1,9 @@
 import axios from 'axios';
 import * as types from './types';
+console.log(import.meta.env);
 
 export const instance = axios.create({
-  baseURL: 'http://localhost:4000',
+  baseURL: import.meta.env.VITE_API_URL,
 });
 
 instance.interceptors.response.use(
