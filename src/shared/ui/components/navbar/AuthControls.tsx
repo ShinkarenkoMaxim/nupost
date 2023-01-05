@@ -34,7 +34,7 @@ export const SignInControls = () => (
     <Typography variant="body2" component="span">
       Don't have an account?
     </Typography>
-    <ActionButton action="/auth/signin" label="Sign In"></ActionButton>
+    <ActionButton action="/auth/signup" label="Sign Up"></ActionButton>
   </>
 );
 
@@ -43,7 +43,7 @@ export const SignUpControls = () => (
     <Typography variant="body2" component="span">
       Already have an account?
     </Typography>
-    <ActionButton action="/auth/signup" label="Sign Up"></ActionButton>
+    <ActionButton action="/auth/signin" label="Sign In"></ActionButton>
   </>
 );
 
