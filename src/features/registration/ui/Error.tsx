@@ -5,7 +5,6 @@ import * as model from '../model';
 export const Error = () => {
   useGate(model.Gate);
   const { hasError, errorMsg } = model.selectors.useSignUpError();
-  console.log(errorMsg);
 
   return hasError ? (
     <Box sx={{ width: '100%', pt: 2 }}>

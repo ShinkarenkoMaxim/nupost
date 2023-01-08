@@ -1,12 +1,15 @@
+import { Feed as GlobalFeed } from '@/features/feed/global-feed';
 import { Navbar } from '@/shared/ui/components/navbar';
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
+import Container from '@mui/material/Container';
 
 const HomePage = () => {
   return (
     <Box>
       <Navbar />
-      <Typography component="h1">Home Page</Typography>
+      <Container component="main" maxWidth="lg" sx={{ pt: 2 }}>
+        <GlobalFeed />
+      </Container>
     </Box>
   );
 };

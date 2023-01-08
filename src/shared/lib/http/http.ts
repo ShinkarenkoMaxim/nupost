@@ -1,6 +1,5 @@
 import axios from 'axios';
 import * as types from './types';
-console.log(import.meta.env);
 
 export const instance = axios.create({
   baseURL: import.meta.env.VITE_API_URL,

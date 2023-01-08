@@ -5,7 +5,6 @@ import { Stack, Typography } from '@mui/material';
 export const ProfileBadge = () => {
   const email = model.selectors.useEmail();
   const profilePic = model.selectors.useProfilePic();
-  console.log(model.selectors.useUser());
 
   return (
     <Stack direction="row" spacing={2} sx={{ alignItems: 'center' }}>

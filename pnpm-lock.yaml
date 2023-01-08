@@ -18,6 +18,7 @@ specifiers:
   effector-react: ^22.4.0
   effector-storage: ^5.0.1
   formik: ^2.2.9
+  patronum: ^1.13.0
   react: ^18.2.0
   react-dom: ^18.2.0
   react-router-dom: 5.3.4
@@ -38,6 +39,7 @@ dependencies:
   effector-react: 22.4.0_mvhdyyowbgcu6xmtttfsidq27y
   effector-storage: 5.0.1_effector@22.4.1
   formik: 2.2.9_react@18.2.0
+  patronum: 1.13.0_effector@22.4.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-router-dom: 5.3.4_react@18.2.0
@@ -1310,6 +1312,14 @@ packages:
   /path-type/4.0.0:
     resolution: {integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==}
     engines: {node: '>=8'}
+    dev: false
+
+  /patronum/1.13.0_effector@22.4.1:
+    resolution: {integrity: sha512-z7t82VYDv3P6F6OA5rpg2mjYVogN1P+qPoktvBEGFp//+JN6UhZxhHBRNMys8J2Xqc1EssUMH7oevqJxRBU6Aw==}
+    peerDependencies:
+      effector: ^22.1.2
+    dependencies:
+      effector: 22.4.1
     dev: false
 
   /picocolors/1.0.0:
