@@ -12,6 +12,8 @@ interface Props {
 }
 
 export const Header = ({ user, reviewId, title }: Props) => {
+  const isAuth = userModel.selectors.useIsAuthorized();
+
   return (
     <Box
       sx={{
@@ -53,7 +55,7 @@ export const Header = ({ user, reviewId, title }: Props) => {
           {`${user.firstName} ${user.lastName}`}
         </Typography>
       </Box>
-      <Controls />
+      {isAuth && <Controls />}
     </Box>
   );
 };

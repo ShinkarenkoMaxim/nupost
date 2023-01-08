@@ -17,7 +17,11 @@ export const ReviewCard = ({ review }: Props) => {
         content={review.content}
         reviewId={review.id}
       />
-      <Actions likes={review.likes} rating={review.usersRating} />
+      <Actions
+        likes={review.likes}
+        rating={review.usersRating}
+        reviewId={review.id}
+      />
     </Paper>
   );
 };

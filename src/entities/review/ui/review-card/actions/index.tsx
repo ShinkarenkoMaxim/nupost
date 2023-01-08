@@ -1,15 +1,16 @@
 import { Box, Rating } from '@mui/material';
-import { Like } from './Like';
+import { Like } from '@/features/like/review';
 
 interface Props {
   likes: number;
   rating: number;
+  reviewId: number;
 }
 
-export const Actions = ({ likes, rating }: Props) => {
+export const Actions = ({ likes, rating, reviewId }: Props) => {
   return (
     <Box sx={{ p: 1, display: 'flex', alignItems: 'center' }}>
-      <Like likesCount={likes} />
+      <Like likesCount={likes} reviewId={reviewId} />
       <Rating
         value={rating}
         sx={{
