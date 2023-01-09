@@ -1,6 +1,7 @@
 import { createEffect, createEvent, guard, restore } from 'effector';
 import { useStore } from 'effector-react';
 import { persist } from 'effector-storage/local';
+import { history } from '@/shared/lib/router/model';
 import * as api from './api';
 import * as http from '@/shared/lib/http';
 
@@ -40,6 +41,10 @@ guard({
 persist({
   store: $token,
   key: 'access_token',
+});
+
+logoutClicked.watch(() => {
+  history.push('/');
 });
 
 export const selectors = {
