@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <Box>
       <Navbar />
-      <Container component="main" maxWidth="lg" sx={{ pt: 2 }}>
+      <Container component="main" maxWidth="lg" sx={{ py: 2 }}>
         <GlobalFeed />
       </Container>
     </Box>

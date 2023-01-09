@@ -17,7 +17,7 @@ export const Feed = () => {
   return (
     <>
       <Loader isLoading={isLoading} />
-      <Stack spacing={4}>
+      <Stack spacing={1}>
         {useList(model.$reviews, (item, key) => (
           <ReviewCard review={item} key={key} />
         ))}

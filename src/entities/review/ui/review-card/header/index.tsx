@@ -40,8 +40,9 @@ export const Header = ({ user, reviewId, title }: Props) => {
           color="text.primary"
           sx={{ fontWeight: 'bold' }}
         >
-          <NavLink
-            to={`/review/${reviewId}`}
+          {/* TODO: need to add routing for working navigation links */}
+          <a
+            href={`/review/${reviewId}`}
             style={{
               textDecoration: 'none',
               color: 'inherit',
@@ -49,7 +50,7 @@ export const Header = ({ user, reviewId, title }: Props) => {
             }}
           >
             {title.length > 45 ? title.slice(0, 45) + '...' : title}
-          </NavLink>
+          </a>
         </Typography>
         <Typography variant="body2" color="text.secondary">
           {`${user.firstName} ${user.lastName}`}
