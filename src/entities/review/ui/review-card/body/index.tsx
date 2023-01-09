@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 interface Props {
   image: string | null;
   content: string;
-  reviewId: number;
+  reviewId: any;
 }
 
 export const Body = ({ image, content, reviewId }: Props) => {

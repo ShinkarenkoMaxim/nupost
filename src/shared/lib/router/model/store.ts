@@ -9,5 +9,6 @@ export const $locationPathname = $location.map((location) => location.pathname);
 export const $locationSearch = $location.map((location) => location.search);
 
 history.listen((location) => {
+  // @ts-ignore
   locationUpdated(location);
 });

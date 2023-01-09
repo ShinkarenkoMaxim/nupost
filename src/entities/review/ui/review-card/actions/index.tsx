@@ -4,7 +4,7 @@ import { Like } from '@/features/like/review';
 interface Props {
   likes: number;
   rating: number;
-  reviewId: number;
+  reviewId: any;
 }
 
 export const Actions = ({ likes, rating, reviewId }: Props) => {

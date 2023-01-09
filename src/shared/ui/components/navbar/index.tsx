@@ -37,7 +37,7 @@ export const Navbar = () => {
           <Toolbar sx={{ justifyContent: 'space-between' }}>
             <Box sx={{ flexGrow: 1 }}>
               <NavLink to="/">
-                <img src="/public/logo.png" alt="logo" height={32} />
+                <img src="/logo.png" alt="logo" height={32} />
               </NavLink>
             </Box>
             {isAuth ? <ProfileBadge /> : AuthControlsComponent}
